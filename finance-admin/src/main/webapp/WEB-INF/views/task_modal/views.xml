@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="taskModal/testModal">
+        <put-attribute name="body" value="/WEB-INF/views/task_modal/test_modal.jsp" />
+    </definition>
+    
+    
+    <!-- 准入验证-人工准入验证 -->
+    <definition name="role_manual_verify" template="/WEB-INF/views/task_modal/access_role_manual_verify.jsp" />
+    <!-- 准入验证-手动通知 -->
+    <definition name="role_service_phone_call" template="/WEB-INF/views/task_modal/access_notification.jsp" />
+    <!-- 额度申请-人工打分 -->
+    <definition name="role_manual_review" template="/WEB-INF/views/task_modal/quota_role_manual_review.jsp" />
+    <!-- 额度申请-审批 -->
+    <definition name="role_xamination_approval" template="/WEB-INF/views/task_modal/quota_approval.jsp" />
+    <!-- 额度申请-人工核准授信额度 -->
+    <definition name="role_approved_credit_limit" template="/WEB-INF/views/task_modal/quota_approved_credit.jsp" />
+    <!-- 额度申请-经理审批 -->
+    <definition name="quota_manager_approval_role" template="/WEB-INF/views/task_modal/quota_manager_approval.jsp" />
+	<!-- 额度申请-发送申请成功通知，并确定开户时间、地点 -->
+    <definition name="role_qutoa_service_call" template="/WEB-INF/views/task_modal/quota_notification.jsp" />
+    <!-- 现场任务分配 -->
+    <definition name="role_task_assign" template="/WEB-INF/views/task_modal/openAccount_assign_task.jsp" />
+    <!-- 数据回填 -->
+    <definition name="role_data_backfill" template="/WEB-INF/views/task_modal/openAccount_data_backfill.jsp" />
+    <!-- 业务归档 -->
+    <definition name="role_business_archive" template="/WEB-INF/views/task_modal/openAccount_business_archive.jsp" />
+    <!-- 失败通知 -->
+    <definition name="role_send_fail_msg" template="/WEB-INF/views/task_modal/fail_notification.jsp" />
+    
+    <!-- 快速贷款 -->
+    <definition name="quickLoan" template="/WEB-INF/views/task_modal/quickLoan.jsp" />
+    
+    
+    <!-- 操作记录 -->
+    <definition name="operation_record" template="/WEB-INF/views/task_modal/operation_record.jsp" />
+    <!-- 打印清单 -->
+    <definition name="openAccount_printList" template="/WEB-INF/views/task_modal/openAccount_printList.jsp" />
+    <!-- 任务转办 -->
+    <definition name="task_transferred" template="/WEB-INF/views/task_modal/task_transferred.jsp" />
+    <!-- 查看流程图 -->
+    <definition name="show_flow_chart" template="/WEB-INF/views/task_modal/show_flow_chart.jsp" />
+    
+    
+    <!-- 待办任务 -->
+    <definition extends="default" name="activiti/task">
+        <put-attribute name="body" value="/WEB-INF/views/task_modal/listSxd.jsp" />
+    </definition>
+    <!-- 待办任务-放款 -->
+    <definition extends="default" name="activiti/taskLoan">
+        <put-attribute name="body" value="/WEB-INF/views/task_modal/listLoan.jsp" />
+    </definition>
+    <!-- 待办任务-快速贷款 -->
+    <definition extends="default" name="activiti/taskQuickLoan">
+        <put-attribute name="body" value="/WEB-INF/views/task_modal/listQuickLoan.jsp" />
+    </definition>
+    
+    
+    
+    <!-- 历史任务 -->
+    <definition extends="default" name="activiti/history">
+        <put-attribute name="body" value="/WEB-INF/views/task_modal/historyList.jsp" />
+    </definition>
+    
+    <!-- 挂起、激活流程实例 -->
+    <definition extends="default" name="activiti/flowState">
+        <put-attribute name="body" value="/WEB-INF/views/task_modal/flowState.jsp" />
+    </definition>
+    
+</tiles-definitions>

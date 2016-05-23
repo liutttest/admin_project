@@ -1,0 +1,11 @@
+#login-box{
+    padding: 0;
+    border: 1px solid gainsboro;
+    margin-top: 6%;
+}
+.rememberMe{
+    margin-top: 10px;
+}
+#login-box .widget-main{
+    background: #ffffff;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+  <process id="quickloan" name="快速贷款申请流程" isExecutable="true">
+    <startEvent id="startevent1" name="快速贷款启动"></startEvent>
+    <userTask id="role_quickloan_confirm" name="待沟通" activiti:candidateGroups="role_quickloan_confirm"></userTask>
+    <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="role_quickloan_confirm"></sequenceFlow>
+    <endEvent id="endevent1" name="快速贷款结束"></endEvent>
+    <sequenceFlow id="flow2" sourceRef="role_quickloan_confirm" targetRef="endevent1"></sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_quickloan">
+    <bpmndi:BPMNPlane bpmnElement="quickloan" id="BPMNPlane_quickloan">
+      <bpmndi:BPMNShape bpmnElement="startevent1" id="BPMNShape_startevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="40.0" y="230.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="role_quickloan_confirm" id="BPMNShape_role_quickloan_confirm">
+        <omgdc:Bounds height="55.0" width="105.0" x="140.0" y="220.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="290.0" y="230.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow1" id="BPMNEdge_flow1">
+        <omgdi:waypoint x="75.0" y="247.0"></omgdi:waypoint>
+        <omgdi:waypoint x="140.0" y="247.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="245.0" y="247.0"></omgdi:waypoint>
+        <omgdi:waypoint x="290.0" y="247.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

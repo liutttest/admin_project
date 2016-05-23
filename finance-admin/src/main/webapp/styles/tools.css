@@ -1,0 +1,46 @@
+.tools {  }
+
+/*===================*\
+    $Loading
+\*===================*/
+.tools .loading .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+    filter:alpha(opacity=20);
+}
+.tools .loading .img { 
+    position: fixed;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.tools .tool-div { padding-left: 32px; }
+.tools .tool-div img { width: 90% }
+/*===================*\
+    $Gritter tip
+\*===================*/
+#gritter-notice-wrapper { top: 40px; }
+.gritter-fail {  }
+.gritter-success {  }
+.gritter-warning {   }
+
+/*===================*\
+    $model tip
+\*===================*/
+.tools .confirm-tip-model { }
+.tools .confirm-tip-model .modal-header { text-align: right; padding: 8px; background-color: #0074bf; color: #fff;  }
+.tools .confirm-tip-model .modal-header h4 {
+    border-right: 1px solid #e4e4e4;
+    margin-right: 24px;
+    padding-right: 10px;
+}
+.tools .confirm-tip-model .modal-footer {
+    border: 0 none;
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="toFaOverdueInfoHistory/list">
+        <put-attribute name="body" value="/WEB-INF/views/fa_overdue_info/fa_overdue_info_list.jsp" />
+    </definition>
+     <definition extends="default" name="toFaOverdue/List">
+        <put-attribute name="body" value="/WEB-INF/views/fa_overdue_info/fa_overdue_list.jsp" />
+    </definition>
+</tiles-definitions>

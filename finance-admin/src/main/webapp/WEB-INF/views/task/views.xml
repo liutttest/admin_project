@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="task/list">
+        <put-attribute name="body" value="/WEB-INF/views/task/list.jsp" />
+    </definition>
+    <definition extends="default" name="task/applyDetail">
+        <put-attribute name="body" value="/WEB-INF/views/task/apply_detail.jsp" />
+    </definition>
+     <definition extends="default" name="sysAdmin/list">
+        <put-attribute name="body" value="/WEB-INF/views/task/sys_admin_list.jsp" />
+    </definition>
+     <definition extends="default" name="quickloan/detail">
+        <put-attribute name="body" value="/WEB-INF/views/task/quick_loan_detail.jsp" />
+    </definition>
+</tiles-definitions>

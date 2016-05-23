@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="faMonitorLog/bank">
+        <put-attribute name="body" value="/WEB-INF/views/fa_monitorlog/fa_monitor_bank_list.jsp" />
+    </definition>
+    <definition extends="default" name="faMonitorLog/access">
+        <put-attribute name="body" value="/WEB-INF/views/fa_monitorlog/fa_monitor_access_list.jsp" />
+    </definition>
+    <definition extends="default" name="faMonitorLog/quota">
+        <put-attribute name="body" value="/WEB-INF/views/fa_monitorlog/fa_monitor_quota_list.jsp" />
+    </definition>
+    <definition extends="default" name="faMonitorLog/field">
+        <put-attribute name="body" value="/WEB-INF/views/fa_monitorlog/fa_monitor_field_list.jsp" />
+    </definition>
+    <definition extends="default" name="faMonitorLog/other">
+        <put-attribute name="body" value="/WEB-INF/views/fa_monitorlog/fa_monitor_other_list.jsp" />
+    </definition>
+    <definition extends="default" name="faMonitorLog/detail">
+        <put-attribute name="body" value="/WEB-INF/views/fa_monitorlog/fa_monitor_detail_list.jsp" />
+    </definition>
+</tiles-definitions>
