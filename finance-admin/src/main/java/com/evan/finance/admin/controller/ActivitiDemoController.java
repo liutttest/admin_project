@@ -37,7 +37,6 @@ public class ActivitiDemoController extends BaseController {
 	
 	@RequestMapping(value="/demo", method = {GET, POST})
 	public String main(@ModelAttribute SearchForm searchForm, Model model) {
-		System.out.println("hello world");
 		return "main/demo";
 	}
 	
